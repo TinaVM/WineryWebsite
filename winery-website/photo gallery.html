@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <!--SOURCE:https://codepen.io/hitensharma/pen/dybryGE-->
+        <link rel="stylesheet" href="CSS/nav.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/newcss.css"/>
+        <link rel="stylesheet" type="text/css" href="JavaScript/gallery.js"/>
+        <link rel="stylesheet" type="text/css" href="JavaScript/lightbox.js"/>
+        <link rel="stylesheet" type="text/css" href="CSS/lightbox.min.css">
+        
+        <style>
+            img{
+                width: 50%;
+                height: 50%;
+                object-fit: contain;
+                display: inline-block;
+    vertical-align: middle;
+            }
+            .gallery {
+            margin: 10px 40px;
+        }
+          
+        .gallery img {
+            width: 400px;
+            height: 400px;
+            transition: 1s;
+            padding: 0px;
+        }
+          
+        .gallery img:hover {
+            filter: drop-shadow(4px 4px 6px gray);
+            transform: scale(1.1);
+        }
+         .navigation-bar.icon{
+    display: none;
+}
+@media screen and (max-width: 600px){
+    .navigation-bar a:not(:first-child) {display: none;}
+    .navigation-bar a.icon{
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px){
+    .navigation-bar.responsive{position: relative;}
+    .navigation-bar.responsive a.icon{
+        posistion: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+.navigation-bar.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+}
+        </style> 
+    </head>
+    <body>
+        <nav>
+            <!--SOURCE:https://codepen.io/hitensharma/pen/dybryGE-->
+    <div class="logo">
+    <img  src="Images/logo.png" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about us.html">About Us</a></li>
+        <li><a href="our work.html">Our Work</a></li>
+        <li><a href="photo gallery.html">Photo Gallery</a></li>
+        <li><a href="get involved.html">Get Involved</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+</nav>
+        <!--SOURCE:https://codepen.io/hitensharma/pen/dybryGE-->
+<script src="JavaScript/nav.js"></script>
+    
+        <!--<h1 style="clear: left">The Organisation</h1>-->
+        
+        <div class="gallery">
+        <img style="float: left;" src="Images/building.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/batches.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/man in winery.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/wine.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/bosses.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/boiler.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/white grapes.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/vineyard.jpg" data-lightbox="mygallery"/>
+        <!--SOURCE: https://images.app.goo.gl/bS9Soicka6yPfFkB6-->
+        <!--SOURCE: https://images.app.goo.gl/XsQw4BKxDVMzGehP6-->
+        <!--SOURCE: https://images.app.goo.gl/ge8i514qYWv1Hvty6-->
+        <!--SOURCE: https://images.app.goo.gl/rF8QDZEG3Y86kLe1A-->
+        <!--SOURCE: https://images.app.goo.gl/7h8NHH1gT8HLXzev7-->
+        <!--SOURCE: https://images.app.goo.gl/Zbkj7ZkcHSeJpDqNA-->
+        <!--SOURCE: https://images.app.goo.gl/nnF7dR9AseJptr9Y9-->
+        <!--SOURCE: https://images.app.goo.gl/WgZ13xab626rghov7-->
+        <!--<h1 style="clear: left">The Staff</h1>-->
+        <img style="float: left;" src="Images/staff work.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/man.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/farmers.jpg" data-lightbox="mygallery"/>
+         <!--SOURCE: https://images.app.goo.gl/GzqD12v5Y6zgNGKt5-->
+        <!--SOURCE: https://images.app.goo.gl/HjVb5QbG7SurgchL6-->
+        <!--SOURCE: https://images.app.goo.gl/gJd25bVJE7iegQDJ7-->
+        <!--SOURCE: https://images.app.goo.gl/QiFjvYSesp5a6y1N8-->
+        <!--<h1 style="clear: left">Our Work</h1>-->
+        <img style="float: left;" src="Images/wine glasses.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/rose.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/red wine bottles.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/barrels men.jpg" data-lightbox="mygallery"/>
+        <!--SOURCE: https://images.app.goo.gl/cUFgzhQRmE47TgRT8-->
+        <!--SOURCE: https://images.app.goo.gl/TTrRnTEqXhZxJtAv9-->
+        <!--SOURCE: https://images.app.goo.gl/WETcSPqGV7LrBjtCA-->
+        <!--SOURCE: https://images.app.goo.gl/sBFFMAthdSbEm9NQ8-->
+        <!--<h1 style="clear: left">Projects</h1>-->
+        <!--<h3 style="clear: left">The GoldBerg Acquisition</h3>-->
+        <img style="float: left;" src="Images/ranch.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/view.jpg" data-lightbox="mygallery"/>
+        <!--SOURCE: https://www.google.com/search?q=images+of+ranches+in+stellenbosch&tbm=isch&chips=q:images+of+ranches+in+stellenbosch,online_chips:vineyards:prZ9yy4-tI8%3D&hl=en&sa=X&ved=2ahUKEwj02vLRxcLwAhWIBhoKHb0XCRcQ4lYoCnoECAEQLA&biw=1903&bih=937#imgrc=3bkrnl1fMI6a9M-->
+        <!--SOURCE: https://images.app.goo.gl/1j9zoYfh1S7iYvNf9-->
+        <!--<h3 style="clear: left">Cliffendale Distributors Partnership</h3>-->
+        <img style="float: left;" src="Images/truck.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/delivery man.jpg" data-lightbox="mygallery"/>
+        <!--SOURCE: https://images.app.goo.gl/gRD6yzDW9AvBfQZX9-->
+        <!--SOURCE: https://images.app.goo.gl/bWANZMAXRG2wndvU6-->
+        <!--<h3 style="clear: left">GrowNow Long-Term Grape Contract</h3>-->
+        <img style="float: left;" src="Images/grape tree.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/grape truck.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/women grape.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/picking.jpg" data-lightbox="mygallery"/>
+        <!--SOURCE: https://images.app.goo.gl/mnFh9M2zYobiF6zZ6-->
+        <!--SOURCE: https://images.app.goo.gl/BxJfStwfbdJrUKgV7-->
+        <!--SOURCE: https://images.app.goo.gl/VbUBVrYDLgRdDdT9A-->
+        <!--<h3 style="clear: left">Livington Farm Lease</h3>-->
+        <img style="float: left;" src="Images/men group.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/agreement.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/smile.jpg" data-lightbox="mygallery"/>
+        <img style="float: left;" src="Images/group.jpg" data-lightbox="mygallery"/>
+        <!--SOURCE: https://images.app.goo.gl/95XetycRpfhadtvw5-->
+        <!--SOURCE: https://images.app.goo.gl/yRuDpxKa4W5Pw6sd7-->
+        <!--SOURCE: https://images.app.goo.gl/3FF7qAiKNnNPsAmp8-->
+        <!--SOURCE: https://images.app.goo.gl/YsSwqoQHGgu7F7zz5-->
+        </div>
+        <!--<h1 style="clear: left">The Organisation</h1>
+        <img style="float: left;" src="Images/building.jpg"/>
+        <img style="float: left;" src="Images/batches.jpg"/>
+        <img style="float: left;" src="Images/man in winery.jpg"/>
+        <img style="float: left;" src="Images/wine.jpg"/>
+        <img style="float: left;" src="Images/bosses.jpg"/>
+        <img style="float: left;" src="Images/boiler.jpg"/>
+        <img style="float: left;" src="Images/white grapes.jpg"/>
+        <img style="float: left;" src="Images/vineyard.jpg"/>
+        <!--SOURCE: https://images.app.goo.gl/bS9Soicka6yPfFkB6-->
+        <!--SOURCE: https://images.app.goo.gl/XsQw4BKxDVMzGehP6-->
+        <!--SOURCE: https://images.app.goo.gl/ge8i514qYWv1Hvty6-->
+        <!--SOURCE: https://images.app.goo.gl/rF8QDZEG3Y86kLe1A-->
+        <!--SOURCE: https://images.app.goo.gl/7h8NHH1gT8HLXzev7-->
+        <!--SOURCE: https://images.app.goo.gl/Zbkj7ZkcHSeJpDqNA-->
+        <!--SOURCE: https://images.app.goo.gl/nnF7dR9AseJptr9Y9-->
+        <!--SOURCE: https://images.app.goo.gl/WgZ13xab626rghov7-->
+        <!--<h1 style="clear: left">The Staff</h1>
+        <img style="float: left;" src="Images/staff work.jpg"/>
+        <img style="float: left;" src="Images/man.jpg"/>
+        <img style="float: left;" src="Images/farmers.jpg"/>
+        <img style="float: left;" src="Images/grapes man.jpg"/>
+        <!--SOURCE: https://images.app.goo.gl/GzqD12v5Y6zgNGKt5-->
+        <!--SOURCE: https://images.app.goo.gl/HjVb5QbG7SurgchL6-->
+        <!--SOURCE: https://images.app.goo.gl/gJd25bVJE7iegQDJ7-->
+        <!--SOURCE: https://images.app.goo.gl/QiFjvYSesp5a6y1N8-->
+        <!--<h1 style="clear: left">Our Work</h1>
+        <img style="float: left;" src="Images/wine glasses.jpg"/>
+        <img style="float: left;" src="Images/rose.jpg"/>
+        <img style="float: left;" src="Images/red wine bottles.jpg"/>
+        <img style="float: left;" src="Images/barrels men.jpg"/>
+        <!--SOURCE: https://images.app.goo.gl/cUFgzhQRmE47TgRT8-->
+        <!--SOURCE: https://images.app.goo.gl/TTrRnTEqXhZxJtAv9-->
+        <!--SOURCE: https://images.app.goo.gl/WETcSPqGV7LrBjtCA-->
+        <!--SOURCE: https://images.app.goo.gl/sBFFMAthdSbEm9NQ8-->
+        <!--<h1 style="clear: left">Projects</h1>
+        <h3 style="clear: left">The GoldBerg Acquisition</h3>
+        <img style="float: left;" src="Images/ranch.jpg"/>
+        <img style="float: left;" src="Images/view.jpg"/>
+        <!--SOURCE: https://www.google.com/search?q=images+of+ranches+in+stellenbosch&tbm=isch&chips=q:images+of+ranches+in+stellenbosch,online_chips:vineyards:prZ9yy4-tI8%3D&hl=en&sa=X&ved=2ahUKEwj02vLRxcLwAhWIBhoKHb0XCRcQ4lYoCnoECAEQLA&biw=1903&bih=937#imgrc=3bkrnl1fMI6a9M-->
+        <!--SOURCE: https://images.app.goo.gl/1j9zoYfh1S7iYvNf9-->
+        <!--<h3 style="clear: left">Cliffendale Distributors Partnership</h3>
+        <img style="float: left;" src="Images/truck.jpg"/>
+        <img style="float: left;" src="Images/delivery man.jpg"/>
+        <!--SOURCE: https://images.app.goo.gl/gRD6yzDW9AvBfQZX9-->
+        <!--SOURCE: https://images.app.goo.gl/bWANZMAXRG2wndvU6-->
+        <!--<h3 style="clear: left">GrowNow Long-Term Grape Contract</h3>
+        <img style="float: left;" src="Images/grape tree.jpg"/>
+        <img style="float: left;" src="Images/grape truck.jpg"/>
+        <img style="float: left;" src="Images/women grape.jpg"/>
+        <img style="float: left;" src="Images/picking.jpg"/>
+        <!--SOURCE: https://images.app.goo.gl/mnFh9M2zYobiF6zZ6-->
+        <!--SOURCE: https://images.app.goo.gl/BxJfStwfbdJrUKgV7-->
+        <!--SOURCE: https://images.app.goo.gl/VbUBVrYDLgRdDdT9A-->
+        <!--<h3 style="clear: left">Livington Farm Lease</h3>
+        <img style="float: left;" src="Images/men group.jpg"/>
+        <img style="float: left;" src="Images/agreement.jpg"/>
+        <img style="float: left;" src="Images/smile.jpg"/>
+        <img style="float: left;" src="Images/group.jpg"/>-->
+        <!--SOURCE: https://images.app.goo.gl/95XetycRpfhadtvw5-->
+        <!--SOURCE: https://images.app.goo.gl/yRuDpxKa4W5Pw6sd7-->
+        <!--SOURCE: https://images.app.goo.gl/3FF7qAiKNnNPsAmp8-->
+        <!--SOURCE: https://images.app.goo.gl/YsSwqoQHGgu7F7zz5-->
+        <script src="JavaScript/lightbox-plus-jquery.min.js"></script>
+        <script src="JavaScript/lightbox-plus-jquery.js"></script>
+        <script src="JavaScript/lightbox.js"></script>
+        <script src="JavaScript/lightbox.min.js"></script>
+        <footer>
+            <p>Copyright <span>&#169;</span>2021 The Red & White Winery. All rights reserved.</p> 
+            <!--SOURCE: https://www.toptal.com/designers/htmlarrows/symbols/copyright-sign/-->
+        </footer>
+    </body>
+</html>
